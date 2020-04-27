@@ -31,8 +31,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl
 
 PRODUCT_PACKAGES += \
-    android.hardware.soundtrigger@2.1-impl \
-    android.hardware.soundtrigger@2.2-impl
+    android.hardware.soundtrigger@2.3-impl
 
 PRODUCT_PACKAGES += \
     libOmxAacEnc \
