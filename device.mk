@@ -111,6 +111,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     DeviceSettings
 
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # Overlays
 PRODUCT_PACKAGES += \
     CarrierConfigOverlaySweet \
