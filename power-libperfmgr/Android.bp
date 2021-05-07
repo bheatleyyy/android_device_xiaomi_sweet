@@ -66,4 +66,5 @@ cc_binary {
         "aidl/PowerHintSession.cpp",
         "aidl/PowerSessionManager.cpp",
     ],
+    proprietary: true,
 }
