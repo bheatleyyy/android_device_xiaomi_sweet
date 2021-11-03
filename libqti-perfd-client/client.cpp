@@ -3,7 +3,6 @@
 #include <stdint.h>
 #include <log/log.h>
 
-namespace android {
     extern "C" void perf_get_feedback() {}
     extern "C" void perf_hint() {}
     extern "C" int perf_lock_acq(int handle, int duration, int arg3[], int arg4) {

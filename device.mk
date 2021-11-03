@@ -66,7 +66,8 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.sweet.rc \
-    init.target.rc
+    init.target.rc \
+    init.qcom.power.rc
 
 PRODUCT_PACKAGES += \
     init.class_main.sh \
@@ -195,7 +196,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.sweet-libperfmgr \
+    android.hardware.power-service.xiaomi-libperfmgr \
     android.hardware.power.stats@1.0-service.mock
 
 PRODUCT_COPY_FILES += \
