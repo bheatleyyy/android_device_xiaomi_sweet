@@ -25,3 +25,10 @@ prebuilt_etc {
     sub_dir: "init/hw",
     soc_specific: true
 }
+
+prebuilt_etc {
+    name: "init.qcom.power.rc",
+    src: "init.qcom.power.rc",
+    sub_dir: "init/hw",
+    soc_specific: true
+}
