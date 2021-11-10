@@ -105,6 +105,7 @@
       "Path": "/dev/stune/top-app/schedtune.boost",
       "Values": [
         "40",
+        "15",
         "10"
       ],
       "ResetOnInit": true
@@ -197,6 +198,7 @@
       "Path": "/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/min_freq",
       "Values": [
         "6881",
+        "3879",
         "2597",
         "762"
       ],
@@ -335,9 +337,15 @@
     },
     {
       "PowerHint": "INTERACTION",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 1000,
+      "Value": "1248000"
+    },
+    {
+      "PowerHint": "INTERACTION",
       "Node": "TASchedtuneBoost",
       "Duration": 1000,
-      "Value": "40"
+      "Value": "15"
     },
     {
       "PowerHint": "INTERACTION",
@@ -373,7 +381,7 @@
       "PowerHint": "INTERACTION",
       "Node": "LLCCBWMinFreq",
       "Duration": 1000,
-      "Value": "2597"
+      "Value": "3879"
     },
     {
       "PowerHint": "LAUNCH",
