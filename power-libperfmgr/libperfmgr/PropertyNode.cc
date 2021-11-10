@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+#define ATRACE_TAG (ATRACE_TAG_POWER | ATRACE_TAG_HAL)
 #define LOG_TAG "libperfmgr"
 
 #include "perfmgr/PropertyNode.h"
@@ -23,6 +24,7 @@
 #include <android-base/properties.h>
 #include <android-base/stringprintf.h>
 #include <android-base/strings.h>
+#include <utils/Trace.h>
 
 namespace android {
 namespace perfmgr {
@@ -49,7 +51,10 @@ std::chrono::milliseconds PropertyNode::Update(bool) {
     if (value_index != current_val_index_ || reset_on_init_) {
         const std::string& req_value =
             req_sorted_[value_index].GetRequestValue();
-
+        if (ATRACE_ENABLED()) {
+            const std::string tag = GetName() + ":" + req_value;
+            ATRACE_BEGIN(tag.c_str());
+        }
         if (!android::base::SetProperty(node_path_, req_value)) {
             LOG(WARNING) << "Failed to set property to : " << node_path_
                          << " with value: " << req_value;
@@ -57,6 +62,9 @@ std::chrono::milliseconds PropertyNode::Update(bool) {
             // Update current index only when succeed
             current_val_index_ = value_index;
             reset_on_init_ = false;
+        }
+        if (ATRACE_ENABLED()) {
+            ATRACE_END();
         }
     }
     return expire_time;
