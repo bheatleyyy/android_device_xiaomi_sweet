@@ -13,23 +13,57 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+cc_library {
+    name: "libdisppower-pixel",
+    proprietary: true,
+    srcs: [
+        "disp-power/DisplayLowPower.cpp",
+        "disp-power/InteractionHandler.cpp",
+    ],
+     shared_libs: [
+        "libbase",
+        "libcutils",
+        "liblog",
+        "libperfmgr",
+        "libutils",
+    ],
+}
+
+// Deprecated, do not use
+// Use pixel-power-ext for vendor extension
+cc_library_headers {
+    name: "pixel_power_headers",
+    vendor: true,
+    export_include_dirs: ["hidl"],
+}
+
 cc_binary {
-    name: "android.hardware.power-service.sweet-libperfmgr",
+    name: "android.hardware.power-service.pixel-libperfmgr",
     relative_install_path: "hw",
-    init_rc: ["android.hardware.power-service.sweet-libperfmgr.rc"],
-    vintf_fragments: ["android.hardware.power-service.sweet-libperfmgr.xml"],
+    init_rc: ["aidl/android.hardware.power-service.pixel-libperfmgr.rc"],
+    vintf_fragments: ["aidl/android.hardware.power-service.pixel.xml"],
+    vendor: true,
     shared_libs: [
-        "android.hardware.power-V1-ndk_platform",
+        "android.hardware.power-V2-ndk_platform",
         "libbase",
         "libcutils",
         "liblog",
         "libutils",
         "libbinder_ndk",
+        "libdisppower-pixel",
         "libperfmgr",
+        "libprocessgroup",
+        "pixel-power-ext-V1-ndk_platform",
     ],
     srcs: [
-        "service.cpp",
-        "Power.cpp",
+        "aidl/service.cpp",
+        "aidl/Power.cpp",
+        "aidl/PowerExt.cpp",
+        "aidl/PowerHintSession.cpp",
+        "aidl/PowerSessionManager.cpp",
     ],
-    proprietary: true,
 }
