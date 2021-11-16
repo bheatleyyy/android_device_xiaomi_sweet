@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/syberia_sweet.mk
+    $(LOCAL_DIR)/potato_sweet.mk
 
 COMMON_LUNCH_CHOICES := \
-    syberia_sweet-eng \
-    syberia_sweet-userdebug \
-    syberia_sweet-user
+    potato_sweet-eng \
+    potato_sweet-userdebug \
+    potato_sweet-user
