@@ -239,9 +239,6 @@ on boot
     #Create camera directory
     mkdir /mnt/vendor/persist/camera 0755 system cameraserver
 
-    # limit discard size to 128MB in order to avoid long IO latency
-    write /sys/block/sda/queue/discard_max_bytes 134217728
-
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
@@ -463,7 +460,9 @@ on property:ro.vendor.iocgrp.config=1
     chown system system /dev/blkio/bg/tasks
     chmod 0664 /dev/blkio/bg/tasks
     write /dev/blkio/blkio.weight 1000
-    write /dev/blkio/bg/blkio.weight 100
+    write /dev/blkio/background/blkio.weight 200
+    write /dev/blkio/blkio.group_idle 2000
+    write /dev/blkio/background/blkio.group_idle 0
 
 on property:persist.sys.ssr.enable_debug=*
     write /sys/module/subsystem_restart/parameters/enable_debug ${persist.sys.ssr.enable_debug}
