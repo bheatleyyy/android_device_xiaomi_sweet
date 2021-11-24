@@ -1,0 +1,8 @@
+allow vendor_qti_init_shell configfs:dir { write };
+allow vendor_qti_init_shell ctl_stop_prop:property_service { set };
+allow vendor_qti_init_shell sysfs:file { write };
+allow vendor_qti_init_shell toolbox_exec:file { getattr };
+allow vendor_qti_init_shell usb_control_prop:file { read };
+allow vendor_qti_init_shell usb_control_prop:property_service { set };
+allow vendor_qti_init_shell vendor_default_prop:property_service { set };
+get_prop(vendor_qti_init_shell, radio_control_prop)
