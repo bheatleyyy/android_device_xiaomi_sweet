@@ -74,6 +74,10 @@ void vendor_load_properties() {
 
     property_override("ro.boot.verifiedbootstate", "green");
 
+    if (is_global) {
+        property_override("ro.boot.product.hardware.sku", "sweet");
+    }
+
     for (int i = 0; i <= 1; i++) {
         full_property_override("model", is_global ? "M2101K6G" :
             (is_pro ? "M2101K6I" : "M2101K6P"), i);
