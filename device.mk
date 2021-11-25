@@ -96,7 +96,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NfcNci \
     Tag \
-    SecureElement \
     com.android.nfc_extras \
     android.hardware.nfc@1.2.vendor
 
