@@ -37,14 +37,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>android.hardware.nfc</name>
-        <version>1.0</version>
-        <interface>
-            <name>INfc</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>android.hardware.radio</name>
         <version>1.0-4</version>
         <interface>
@@ -230,19 +222,18 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.nxp.hardware.nfc</name>
-        <version>1.0-1</version>
-        <version>2.0</version>
+        <name>vendor.nxp.nxpese</name>
+        <version>1.0</version>
         <interface>
-            <name>INqNfc</name>
+            <name>INxpEse</name>
             <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.nxp.nxpnfclegacy</name>
+        <name>vendor.nxp.nxpnfc</name>
         <version>1.0</version>
         <interface>
-            <name>INxpNfcLegacy</name>
+            <name>INxpNfc</name>
             <instance>default</instance>
         </interface>
     </hal>
