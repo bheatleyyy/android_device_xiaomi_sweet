@@ -98,7 +98,8 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag \
     com.android.nfc_extras \
-    android.hardware.nfc@1.2.vendor
+    android.hardware.nfc@1.2-service \
+    android.hardware.secure_element@1.2-service
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_sweet/android.hardware.nfc.ese.xml \
