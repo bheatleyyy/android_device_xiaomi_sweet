@@ -36,7 +36,7 @@
             <name>ISecureElement</name>
             <instance>eSE1</instance>
         </interface>
-        <fqname>@1.2::ISecureElement/eSE1</fqname>
+        <fqname>@1.0::ISecureElement/eSE1</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.esepowermanager</name>

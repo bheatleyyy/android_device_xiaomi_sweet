@@ -36,5 +36,5 @@
 /vendor/bin/hw/android\.hardware\.nfc@1\.2-service                u:object_r:hal_nfc_default_exec:s0
 
 # Secure element
-/vendor/bin/hw/android\.hardware\.secure_element@1\.2-service     u:object_r:hal_secure_element_default_exec:s0
+/vendor/bin/hw/android\.hardware\.secure_element@1\.0-service     u:object_r:hal_secure_element_default_exec:s0
 
