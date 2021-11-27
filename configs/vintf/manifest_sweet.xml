@@ -38,14 +38,4 @@
         </interface>
         <fqname>@1.0::ISecureElement/eSE1</fqname>
     </hal>
-    <hal format="hidl">
-        <name>vendor.qti.esepowermanager</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IEsePowerManager</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.1::IEsePowerManager/default</fqname>
-    </hal>
 </manifest>
