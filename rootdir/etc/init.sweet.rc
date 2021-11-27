@@ -80,7 +80,6 @@ on post-fs-data
 
 on init && property:ro.boot.hwc=GLOBAL
     enable vendor.nfc_hal_service
-    enable qti_esepowermanager_service_1_1
     enable secure_element_hal_service
 
 service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
@@ -88,13 +87,6 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     class hal
     user nfc
     group nfc
-    disabled
-
-service qti_esepowermanager_service_1_1 /vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
-    override
-    class hal
-    user system
-    group nfc system
     disabled
 
 on boot
