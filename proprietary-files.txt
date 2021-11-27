@@ -189,7 +189,6 @@ vendor/bin/mlid
 vendor/bin/msm_irqbalance
 vendor/bin/mtd@1.2
 vendor/bin/netmgrd
-vendor/bin/nqnfcinfo
 vendor/bin/nv_mac
 vendor/bin/pd-mapper
 vendor/bin/playback_headset.sh
@@ -431,15 +430,6 @@ vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vppservice.rc
 vendor/etc/IPACM_cfg.xml
 vendor/etc/izat.conf
-vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf
-vendor/etc/libnfc-mtp-SN100.conf
-vendor/etc/libnfc-nci.conf
-vendor/etc/libnfc-nxp.conf
-vendor/etc/libnfc-nxp-JAPAN.conf
-vendor/etc/libnfc-nxp-pnscr.conf
-vendor/etc/libnfc-nxp_RF.conf
-vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf
-vendor/etc/libnfc-qrd-SN100.conf
 vendor/etc/listen_platform_info.xml
 vendor/etc/lm/AdaptLaunchFeature.xml
 vendor/etc/lm/AppClassifierFeature.xml
@@ -547,13 +537,6 @@ vendor/etc/sensors/config/tsl2540.json
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/judge_calibrated.json
 vendor/etc/sensors/sns_reg_config
-vendor/etc/sn100u_nfcon.pnscr
-vendor/etc/sn100u_pnx_chr.pnscr
-vendor/etc/sn100u_pnx_cui.pnscr
-vendor/etc/sn100u_pnx_ese_3.pnscr
-vendor/etc/sn100u_pnx_ndi.pnscr
-vendor/etc/sn100u_pnx_pcv.pnscr
-vendor/etc/sn100u_pnx_sst.pnscr
 vendor/etc/sound_trigger_mixer_paths_qrd.xml
 vendor/etc/sound_trigger_mixer_paths_wcd9340.xml
 vendor/etc/sound_trigger_mixer_paths.xml
