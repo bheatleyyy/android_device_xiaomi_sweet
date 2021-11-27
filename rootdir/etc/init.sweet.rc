@@ -80,6 +80,7 @@ on post-fs-data
 
 on init && property:ro.boot.hwc=GLOBAL
     enable vendor.nfc_hal_service
+    enable secure_element_hal_service
 
 service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     override
