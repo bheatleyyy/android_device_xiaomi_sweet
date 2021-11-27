@@ -27,8 +27,18 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     android.hardware.audio.service \
     android.hardware.audio.common-util \
-    android.hardware.audio.effect@7.0-impl \
-    android.hardware.audio@7.0-impl
+    android.hardware.audio.common@2.0-util \
+    android.hardware.audio.common@4.0-util \
+    android.hardware.audio.common@5.0-util \
+    android.hardware.audio.common@6.0-util \
+    android.hardware.audio.effect@2.0-impl \
+    android.hardware.audio.effect@4.0-impl \
+    android.hardware.audio.effect@5.0-impl \
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio@4.0-impl \
+    android.hardware.audio@5.0-impl \
+    android.hardware.audio@6.0-impl
 
 PRODUCT_PACKAGES += \
     sound_trigger.primary.sm6150 \
