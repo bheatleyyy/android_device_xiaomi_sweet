@@ -93,6 +93,10 @@ system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 -system_ext/priv-app/ims/ims.apk
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 
+# Soundtrigger - from sunfish-user-12-SP1A.210812.015-7679548-release-keys
+vendor/lib64/hw/sound_trigger.primary.sm6150.so|18886433c30b32f99dcddb5c6c3bd1a1e03dfb48
+vendor/lib/hw/sound_trigger.primary.sm6150.so|aa050b609cfde8ea4a6010533a0fb50e66a33e2e
+
 # vendor
 -vendor/app/CACertService/CACertService.apk
 vendor/app/CACertService/oat/arm64/CACertService.odex
@@ -741,7 +745,6 @@ vendor/lib64/hw/consumerir.default.so
 vendor/lib64/hw/fingerprint.fortsense.so:vendor/lib64/hw/fingerprint.fortsense.sm6150.so
 vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.sm6150.so
 vendor/lib64/hw/lights.sm6150.so
-vendor/lib64/hw/sound_trigger.primary.sm6150.so
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
@@ -1345,7 +1348,6 @@ vendor/lib/hw/consumerir.default.so
 vendor/lib/hw/fingerprint.fortsense.so
 vendor/lib/hw/fingerprint.fpc.so
 vendor/lib/hw/lights.sm6150.so
-vendor/lib/hw/sound_trigger.primary.sm6150.so
 vendor/lib/hw/vendor.qti.gnss@4.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
