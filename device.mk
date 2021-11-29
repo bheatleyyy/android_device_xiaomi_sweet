@@ -40,6 +40,11 @@ PRODUCT_PACKAGES += \
     libOmxG711Enc \
     libOmxQcelp13Enc
 
+# A2DP
+PRODUCT_PACKAGES += \
+   audio.a2dp.default \
+   android.hardware.bluetooth.a2dp@1.0.vendor
+
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
