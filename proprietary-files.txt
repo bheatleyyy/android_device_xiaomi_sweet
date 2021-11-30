@@ -1,4 +1,4 @@
-# Unpinned section - from MIUI v12.5.8.0 RKFMIXM
+# Unpinned blobs from Redmi/sweet_eea/sweet:11/RKQ1.200826.002/V12.5.6.0.RKFEUXM:user/release-keys
 
 # ACDB
 # From MIUI V12.0.15.0 RKFMIXM
