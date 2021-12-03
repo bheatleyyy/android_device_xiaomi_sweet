@@ -92,15 +92,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "GPUIdleTimer",
-      "Path": "/sys/class/kgsl/kgsl-3d0/idle_timer",
-      "Values": [
-        "10000",
-        "80"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "TASchedtuneBoost",
       "Path": "/dev/stune/top-app/schedtune.boost",
       "Values": [
@@ -425,12 +416,6 @@
     },
     {
       "PowerHint": "LAUNCH",
-      "Node": "GPUIdleTimer",
-      "Duration": 3000,
-      "Value": "10000"
-    },
-    {
-      "PowerHint": "LAUNCH",
       "Node": "LLCCBWMinFreq",
       "Duration": 3000,
       "Value": "6881"
@@ -468,19 +453,19 @@
     {
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "PowerHALRenderingState",
-      "Duration": 0,
+      "Duration": 500,
       "Value": "EXPENSIVE_RENDERING"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMinFreq",
-      "Duration": 0,
+      "Duration": 500,
       "Value": "0"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMaxFreq",
-      "Duration": 0,
+      "Duration": 500,
       "Value": "0"
     },
     {
