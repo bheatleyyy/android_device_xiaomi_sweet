@@ -1067,14 +1067,6 @@ vendor/etc/sensors/hals.conf
 vendor/etc/sensors/judge_calibrated.json
 vendor/etc/sensors/sns_reg_config
 
-# Soundtrigger
-vendor/lib/librice.so
-vendor/lib64/librice.so
-
-# Soundtrigger - from sunfish-user-12-SP1A.210812.015-7679548-release-keys
-vendor/lib/hw/sound_trigger.primary.sm6150.so|aa050b609cfde8ea4a6010533a0fb50e66a33e2e
-vendor/lib64/hw/sound_trigger.primary.sm6150.so|18886433c30b32f99dcddb5c6c3bd1a1e03dfb48
-
 # Thermal (Xiaomi)
 vendor/bin/mi_thermald
 vendor/etc/init/init.mi_thermald.rc
@@ -1337,10 +1329,6 @@ vendor/etc/sap.conf
 vendor/etc/screen_light.xml
 vendor/etc/sdr_config.cfg
 vendor/etc/sec_config
-vendor/etc/sound_trigger_mixer_paths.xml
-vendor/etc/sound_trigger_mixer_paths_qrd.xml
-vendor/etc/sound_trigger_mixer_paths_wcd9340.xml
-vendor/etc/sound_trigger_platform_info.xml
 vendor/etc/system_properties.xml
 vendor/etc/thermal-camera.conf
 vendor/etc/thermal-chg-only.conf
